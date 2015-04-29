@@ -200,3 +200,9 @@ body,
 	}
 
 }
+
+@media screen and (max-width: 767px) {
+	.slide > p {
+		font-size: 0.65em;
+	}
+}

@@ -1,0 +1,6 @@
+{
+  "name": "community-manager-presentation",
+  "root": "./",
+  "clean_urls": true,
+  "error_page": "error.html"
+}
