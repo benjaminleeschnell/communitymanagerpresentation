@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Wobbly Slideshow Effect</title>
+		<meta name="description" content="Wobbly slideshow effect using Snap.svg" />
+		<meta name="keywords" content="slideshow, wobbly, jelly, effect, svg, snap.svg, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/slideshow.css" />
+		<script src="js/snap.svg-min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<div id="slideshow" class="slideshow">
+				<ul>
+					<li>
+						<div class="slide">
+							<!-- <div class="codrops-links">
+								<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/TooltipStylesInspiration/"><span>Previous Demo</span></a>
+								<a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=20714"><span>Back to the Codrops Article</span></a>
+							</div> -->
+							<img class="icon" src="img/icons/ben.png" alt="Browser Icon"/>
+							<h1>Why I would be a <br /> good community manager</h1>
+							<p>By Ben Schnell</p>
+						</div>
+					</li>
+					<li>
+						<div class="slide">
+							<img class="icon" src="img/icons/dad.png" alt="Heart Icon"/>
+							<blockquote>
+								<p>1. I learned hospitality early on from my dad.</p>
+							</blockquote>
+							<p>Growing up my dad ran church retreat centers. That's where he taught me that customer service means doing whatever needs to be done, even if it was never written down in a job description. For him this often meant digging people's cars out of the snow (at a retreat center in the mountains of Colorado). <br /><br /> Being community manager means being available and happy to serve in a wide variety of ways.</p>
+						</div>
+					</li>
+					<li>
+						<div class="slide">
+							<img class="icon" src="img/icons/beard.png" alt="Letter Icon"/>
+							<blockquote>
+								<p>2. Summer Camp Leadership   </p>
+							</blockquote>
+							<p>I spent 6 summers working at camp, which required living in close quarters and building a great community among a large staff to better serve the campers.</p>
+						</div>
+					</li>
+					<li>
+						<div class="slide">
+							<img class="icon" src="img/icons/football.svg" alt="Football Icon"/>
+							<blockquote>
+								<p>3. I Loved Dorm Life</p>
+							</blockquote>
+							<p>I loved living in the dorm in college because of the opportunity to interact with a very immediate community. One of the best memories was from that time was when we instituted a community meal plan that eventually had about 30 members. There was a rotation of 9 apartments that would provide dinner for everyone. The rotation had us eating together 3 nights a week. It was a highlight of my college experience. <br /><br />As community manager I would similarly be active in fostering friendships in the building.</p>
+						</div>
+					</li>
+					<li>
+						<div class="slide">
+							<img class="icon" src="img/icons/match.svg" alt="Match Icon"/>
+							<blockquote>
+								<p>4. Pastoral Experience</p></blockquote>
+							<p>After college I spent a year working as a pastor. The thing that attracted me to pastoring was fostering community. My job was love people by understanding what was important in their lives, to let them know we missed them at church, and to visit their elderly family members.  <br /><br />Connecting with people, listening to them, and solving problems has always come naturally for me.</p>
+						</div>
+					</li>
+					<li>
+						<div class="slide">
+							<img class="icon" src="img/icons/watch.svg" alt="Watch Icon"/>
+							<blockquote>
+								<p>5. Innovation Delegation</p></blockquote>
+							<p>Last October WayPaver hosted 10 innovative people for a week. I spent that week chasing down anything that could make their experience more enjoyable. Each delegate had different things they wanted to get out of the experience, and they we're impressed with my eagerness to meet a wide range of requests. <br /><br />Being community manager requires patience and willingness to accomodate individual needs.</p>
+						</div>
+					</li>
+					<li>
+						<div class="slide">
+							<img class="icon" src="img/icons/ben.png" alt="Watch Icon"/>
+							<blockquote>
+								<p>I'm made for this job.</p></blockquote>
+							<p>I'm intrinsically motivated by hospitality and making connections. It's a job that doesn't feel like work. I'd love to talk more about this opportunity.</p>
+						</div>
+					</li>
+
+							<!-- <div class="codrops-links">
+								<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/TooltipStylesInspiration/"><span>Previous Demo</span></a>
+								<a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=20714"><span>Back to the Codrops Article</span></a>
+							</div> -->
+							<!-- <div class="related">
+								<p>If you enjoyed this demo you might also like:</p>
+								<a href="http://tympanus.net/Tutorials/PagePreloadingEffect/">
+									<img src="img/related/PagePreloadingEffect.png" />
+									<h3>Page Preloading Effect</h3>
+								</a>
+								<a href="http://tympanus.net/Development/ButtonComponentMorph/">
+									<img src="img/related/MorphingButtons.png" />
+									<h3>Morphing Buttons</h3>
+								</a>
+							</div> -->
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/sliderFx.js"></script>
+		<script>
+			(function() {
+				new SliderFx( document.getElementById('slideshow'), {
+					easing : 'cubic-bezier(.8,0,.2,1)'
+				} );
+			})();
+		</script>
+	</body>
+</html>
